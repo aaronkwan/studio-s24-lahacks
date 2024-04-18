@@ -13,12 +13,12 @@ public class Campfire : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float sizePercent = Manager.Instance.life / 30f;
-        if (sizePercent < 0)
+        float sizePercent = Manager.Instance.life / 60f;
+        if (sizePercent < 0 || sizePercent > 1f)
         {
             gameObject.SetActive(false);
-            Manager.Instance.EndGame();
+            Manager.Instance.EndGame(sizePercent > 1f); // win if sizePercent > 1f, lose otherwise.
         }
-        transform.localScale = Vector2.one * sizePercent * 1.5f;
+        transform.localScale = Vector2.one * sizePercent * 3f;
     }
 }

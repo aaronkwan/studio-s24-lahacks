@@ -4,11 +4,17 @@ A Simple Demo for Demonstrating WebGL, Mobile support, and API integration.
 - Created for ACM Studio's `Interactive App and Game Design with Unity` Workshop during LA Hacks 2024.
 - Adapted from the [Adaptive Sound Design](https://github.com/aaronkwan/studio-w24-fmod/tree/main) skeleton project.
 
+## Features
+- Modular design.
+- Lightweight and fully WebGL compatible.
+- Mobile and touch support.
+- Integration with [simple backend](https://github.com/aaronkwan/starter-rest-api) for leaderboard.
+
 ## Resources
 - [Tutorial Slides](https://docs.google.com/presentation/d/1B9RMw7ci3ZWn2ydjm0kXlAUBFW3kQvoUw591l0MvTZM/edit?usp=sharing)
 
 ## Premise
-- You are out in the wild. Collect sticks to fuel your campfire. If it gets too small, you lose.
+- You are out in the wild. Collect sticks to fuel your campfire. If it gets too small, you lose. Make it big enough and you win.
 
 On Keyboard:
 - Hold `WASD` to move.

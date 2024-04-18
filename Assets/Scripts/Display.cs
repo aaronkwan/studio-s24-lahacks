@@ -9,21 +9,27 @@ public class Display : MonoBehaviour
 {
     [SerializeField] public GameObject pauseMenu;
     [SerializeField] public GameObject gameOverMenu;
-    [SerializeField] private TMP_Text gameOverMessage;
+    [SerializeField] public GameObject gameWonMenu;
     [SerializeField] private Image overlayLife;
 
     public void DisplayPause(bool pause)
     {
         pauseMenu.SetActive(pause);
     }
-    public void DisplayGameOver(bool gameOver)
+    public void DisplayGameOver(bool won)
     {
-        gameOverMenu.SetActive(gameOver);
-        gameOverMessage.text = "Time survived: " + Manager.Instance.timer;
+        if (won)
+        {
+            gameWonMenu.SetActive(won);
+        }
+        else
+        {
+            gameOverMenu.SetActive(!won);
+        }
     }
     void FixedUpdate()
     {
-        overlayLife.fillAmount = (Manager.Instance.life / 30f);
+        overlayLife.fillAmount = (Manager.Instance.life / 60f);
     }
 
     #region Mobile

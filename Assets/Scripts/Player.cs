@@ -120,6 +120,7 @@ public class Player : MonoBehaviour
     private void PickUpStick()
     {
         Manager.Instance.m_sound.PickupStick();
+        Manager.Instance.total_sticks++;
 
         hasStick = true;
         if (flashLightCoroutine != null)

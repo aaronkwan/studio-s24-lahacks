@@ -242,10 +242,12 @@ public class Controller : MonoBehaviour
         // Cheats:
         if (control.GetCheatPlusInput())
         {
+            Manager.Instance.isCheating = true;
             Manager.Instance.life += 0.5f;
         }
         if (control.GetCheatMinusInput())
         {
+            Manager.Instance.isCheating = true;
             Manager.Instance.life -= 0.5f;
         }
     }

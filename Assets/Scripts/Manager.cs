@@ -38,8 +38,10 @@ public class Manager : MonoBehaviour
 
     public int timer = 1;
     public float life = 30f;
+    public int total_sticks = 0;
     private Coroutine timerCoroutine;
     public bool isPaused = false;
+    public bool isCheating = false;
     IEnumerator Timer()
     {
         int i = 0;
@@ -66,10 +68,10 @@ public class Manager : MonoBehaviour
         timerCoroutine = StartCoroutine(Timer());
         SpawnNewStick();
     }
-    public void EndGame()
+    public void EndGame(bool won)
     {
         StopCoroutine(timerCoroutine);
-        m_display.DisplayGameOver(true);
+        m_display.DisplayGameOver(won);
         isPaused = true;
     }
     public void RestartGame()
