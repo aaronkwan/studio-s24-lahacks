@@ -1,6 +1,8 @@
 # studio-s24-lahacks
 A Simple Demo for Demonstrating WebGL, Mobile support, and API integration.
 
+## Play it here: https://drkwan.itch.io/la-hacks-demo
+
 - Created for ACM Studio's `Interactive App and Game Design with Unity` Workshop during LA Hacks 2024.
 - Adapted from the [Adaptive Sound Design](https://github.com/aaronkwan/studio-w24-fmod/tree/main) skeleton project.
 
@@ -9,6 +11,10 @@ A Simple Demo for Demonstrating WebGL, Mobile support, and API integration.
 - Lightweight and fully WebGL compatible.
 - Mobile and touch support.
 - Integration with [simple backend](https://github.com/aaronkwan/starter-rest-api) for leaderboard.
+
+## Known Issues
+- Cheats only work with NUMPAD_PLUS and NUMPAD_MINUS.
+- ESC to pause does not work as expected in WebGL.
 
 ## Resources
 - [Tutorial Slides](https://docs.google.com/presentation/d/1B9RMw7ci3ZWn2ydjm0kXlAUBFW3kQvoUw591l0MvTZM/edit?usp=sharing)
